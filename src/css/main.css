@@ -1,0 +1,136 @@
+:root {
+    --dark: #1c1b22;
+    --light-dark: #2f2e38;
+    --max_width: 432px;
+    --min_width: 43px;
+}
+
+body {
+    margin: 0;
+    padding: 3px;
+    font-size: 18px;
+    background-color: var(--dark);
+}
+
+.sidebar {
+    display: flex;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100% - (3px * 2 + 3px * 2));
+    width: calc(100% - (3px * 2 + 3px * 2));
+    background-color: var(--light-dark);
+    border-radius: 5px;
+    position: fixed;
+    top: 3px;
+}
+
+.nav__list-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__list-item {
+    margin-bottom: 6px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.15s ease-in-out;
+    position: relative;
+}
+
+.nav__list-item:hover,
+.add-button:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav__list-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav__list-item.active {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+.nav__list-item:active {
+    transform: scale(0.97);
+}
+
+.space-name {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.space-icon,
+.add-button img {
+    max-width: 32px;
+    max-height: 32px;
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.delete-button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+.add-button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    width: 100%;
+    position: sticky;
+    right: 10px;
+}
+
+.add-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 170px) {
+    .space-name {
+        display: none;
+    }
+
+    .delete-button {
+        display: none;
+    }
+
+    .nav__list-item:hover,
+    .add-button:hover {
+        transform: scale(1.07);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
