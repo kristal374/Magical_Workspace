@@ -61,9 +61,10 @@
 ### Внешний вид
 
 ---
-
-![present-1.png](assets\present-1.png)
-![present-2.png](assets\present-2.png)
+<p align="center">
+   <img src="assets\present-1.png" width="800" alt="present-1.png">
+   <img src="assets\present-2.png" width="800" alt="present-1.png">
+</p>
 
 ### Использование
 
