@@ -1,7 +1,15 @@
 # Magical Workspace
 
 ---
-
+<p align="center">
+    <img src="https://img.shields.io/github/v/release/kristal374/Magical_Workspace">
+    <img src="https://img.shields.io/github/license/kristal374/Magical_Workspace">
+</p>
+<p align="center">
+   <img src="https://img.shields.io/badge/JavaScript-FFD700?logo=javascript&logoColor=white"/>
+   <img src="https://img.shields.io/badge/HTML-red.svg?logo=html5&logoColor=white"/>
+   <img src="https://img.shields.io/badge/CSS-blue.svg?logo=css3&logoColor=white"/>
+</p>
 <p align="center">
     <img src="assets/MagicalWorkSpace_logo.png" width="300" alt="logo">
 </p>
@@ -28,7 +36,8 @@
     * Если возникнет предупреждение, нажмите "Продолжить".
 2. В поле поиска введите `toolkit.legacyUserProfileCustomizations.stylesheets`.
 3. Измените значение данного параметра с `false` на `true`.
-4. Перейдите по следующему пути: `Меню -> Справка -> Информация для решения проблем -> Папка профиля -> Открыть папку` или если язык браузера
+4. Перейдите по следующему пути: `Меню -> Справка -> Информация для решения проблем -> Папка профиля -> Открыть папку`
+   или если язык браузера
    английский: `Firefox menu -> Help -> Troubleshooting Information -> Profile folder -> Open folder`
 5. Должна быть папка с именем Chrome. Если её нет, создайте её.
 6. В упомянутой папке Chrome есть файл `userchrome.css`. Если его не существует, создайте его.
