@@ -4,6 +4,12 @@
   "version": "1.0",
   "author": "mail.aleks.for.work@gmail.com",
   "description": "Simple workspace",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{47bce7c4-4737-41fc-8895-22bd3d95b18b}",
+      "strict_min_version": "109.0"
+    }
+  },
   "permissions": [
     "tabs",
     "storage"
